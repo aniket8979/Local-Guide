@@ -1,0 +1,62 @@
+.topbar {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family:monospace;
+    height: 70px;
+    display: flex;
+}
+.logo {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.BgImage {
+    background-image: url('../image/f-b-image.jpg');
+    height: 800px;
+    background-size:cover;
+}
+
+
+.placetxtsign1 {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 35%;
+    color: aliceblue;
+    font-size: large;
+    display: flex;
+
+}
+
+.placetxtsign {
+    display: flex;
+    padding-left: 35%;
+    color: aliceblue;
+    font-size: large;
+    display: flex;
+
+}
+
+
+
+.username {
+    background-color: rgb(24, 23, 23);
+    color: aliceblue;
+    font-family:monospace;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5%;
+
+}
+
+.signbtn {
+    background-color: rgb(24, 23, 23);
+    color: aliceblue;
+    font-family:monospace;
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 47%;
+
+}

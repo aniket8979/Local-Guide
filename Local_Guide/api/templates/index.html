@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Guide - Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "api/css/index.css" %}">
+</head>
+
+<body>
+
+    <div>
+        <div class="frontPage">
+            <div class="topbar">
+                <h1 class="logo">Local Guide</h2>
+                    <input class="sign" type="submit" value="Sign UP" onclick="window.location='signup';" /> 
+
+            </div>
+        </div>
+            <div class="BgImage">
+                <h1 class="welcometxt">Explore the World</h1>
+                
+                <div class="input-page">
+                    <form action="{% url 'index' %}" method="POST">
+                        
+                        {% csrf_token %}
+
+                        <label class="" for="usid">User ID: </label>
+                        <input class="userid1" type="text" id="usid" name="username" required >
+                        <br>
+                        <br>
+                        <label class="" for="psswd">Password: </label>
+                        <input class="pass1" type="password" id="psswd" name="password" required >
+                        <br>
+                        <br>
+                        <button class="logbtn" type="submit">Login</button>
+                        <div class="response">
+                            {{response}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+        
+    </body>
+</html>

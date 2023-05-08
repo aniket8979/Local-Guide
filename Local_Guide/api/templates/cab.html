@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cab Booking Data</h1>
+
+    
+    <h1>Your Booking ID is: {{booking_id}}</h1>
+    <h3>From: {{from}}  To: {{to}}</h3>
+
+    {% for x in user %}
+    <h3 class='profiletab'> Username: {{x.username }}</h3>
+    <h3 class='profiletab'> Name: {{x.name }}</h3>
+    <h3 class='profiletab'> City:  {{x.city }}</h3>
+    {% endfor %}
+
+    {% for d in driver %}
+    <h3>Driver Name: {{d.dname}}</h3>
+    <h3>Driver Phone: {{d.dphone}}</h3>
+    {% endfor %}
+
+    <a href="{% url 'index' %}">Go to Home Page</a>
+
+</body>
+</html>

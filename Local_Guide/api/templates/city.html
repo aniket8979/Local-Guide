@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Route</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "api/css/city.css" %}">
+</head>
+<body>
+    <div>
+        <div>
+            <div class="topbar">
+                <h2 class="logo">Local Guide</h2>
+                    <input class="sign" type="submit" value="Profile" onclick="window.location='{% url 'profile' %}';" /> 
+                    <input class="logoutbtn" type="submit" value="Log out" onclick="window.location='{% url 'logout' %}';" /> 
+
+                
+            </div>
+        </div>
+
+        <div class="BgImage">
+            
+            <form action="{% url 'Search_Route' %}" method="POST" class="inputPage">
+
+                {% csrf_token %}
+
+                <input type="text" class="searchBox" placeholder="From" name='from' required>
+            
+                <input type="text" class="searchBox" placeholder="To" name='to' required>
+            
+                <button class="bttn" type="submit">Search</button>
+
+                <div>
+                    <table border='1'>
+                        {% for x in response %}
+                        <tr>
+                            <td class='bttn'>{{ x }}</td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                </div>
+
+                <div>
+                    <div id="route-array"></div>
+
+                    <script src="{% static 'api/js/search.js' %}"></script>
+
+                    <script>displayArrayResponse();</script>
+                </div>
+
+                
+
+            </form>
+            
+            <img id="my-image" src="{% static 'api/image/citymap.png' %}" class="hidden">
+            <style>
+                .hidden { display: none; }
+                .visible { display: block; height: 600px; width: 1250px;}
+                
+            </style>
+            
+            
+            
+            
+            
+        </div>
+    </div>    
+    <div class="ddesign">
+        <button class="bbar-map" id="show-image-button">Map</button>
+        <script>
+            const showImageButton = document.getElementById("show-image-button");
+            const myImage = document.getElementById("my-image");
+            showImageButton.addEventListener("click", () => { myImage.classList.toggle("visible"); });
+        </script>
+        <input class="bbar-cab" type="submit" value="Cab" onclick="window.location='{% url 'cab' %}';" /> 
+    </div>
+    
+</body>
+</html>

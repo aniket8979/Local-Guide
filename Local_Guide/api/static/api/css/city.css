@@ -1,0 +1,153 @@
+.inputPage{
+    width: auto;
+    height: auto;
+}
+.topbar{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family:monospace;
+    height: 70px;
+    display: flex;
+}
+
+.logo {
+    padding-left: 20px;
+    padding-top: 0;
+}
+
+.BgImage {
+    background-image: url('f-b-image.jpg');
+    height: 800px;
+    width: auto;
+    padding: auto;
+    background-size:cover;
+}
+
+.sign {
+    margin-left: 75%;
+    font-size: large;
+    font: bold;
+    background: none;
+    border-radius: 5px;
+    border: none;
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 2px solid rgb(65, 59, 59);
+}
+
+.logoutbtn {
+    font-size: large;
+    font: bold;
+    background: none;
+    border-radius: 5px;
+    border: none;
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 2px solid rgb(65, 59, 59);
+}
+
+
+.bttn{
+    color: rgb(91, 49, 14);
+    background-color: rgb(245, 176, 15);
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 10%;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    font: size 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+
+}
+
+
+.bttn1{
+    color: rgb(36, 65, 25);
+    background-color: rgb(31, 187, 201);
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 10%;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    font: size 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+.searchBox{
+    background-color: azure;
+    border-color: rgb(77, 175, 255);
+    border-style:inset;
+    margin: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+}
+
+.ddesign{
+    position: fixed;
+    float: inline-end;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    /* border: 2px solid rgb(21, 103, 21); */
+    align-items: center;
+    background-color: darkgrey;
+    overflow: auto;
+}
+
+.bbar-map {
+    background-color: #b0c3b0;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin-right: 20px; */
+    width: 50%;
+
+}
+.bbar-map:hover {
+    background-color: rgb(138, 201, 158);
+}
+
+.bbar-cab{
+    background-color: #b0c3b0; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    width: 49%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+.bbar-cab:hover {
+    background-color: rgb(138, 201, 158);
+
+}
+
+.img{
+    height: 30px;
+    width: 40px;
+    margin-right:12px;
+}
+

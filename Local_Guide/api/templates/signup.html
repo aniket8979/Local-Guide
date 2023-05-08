@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Guide - Signup</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "api/css/index.css" %}">
+</head>
+
+<body>
+    <div>
+        <div class="frontPage">
+            <div class="topbar">
+                <h1 class="logo"> <a href="{% url 'index' %}"> Local Guide</a> </h1>
+
+            </div>
+        </div>
+
+            <div class="BgImage">
+                <h1 class="welcometxt">Sign UP</h1>
+                
+                <div class="input-page">
+                    
+                    <form action="signup" method="POST">
+
+                        {% csrf_token %}
+
+                        <label class="" for="usid">User ID: </label>
+                        <input class="userid1" type="text" id="usid" name="username" required >
+                        <br>
+                        <label class="" for="name">Name : </label>
+                        <input class="pass1" type="text" id="name" name="name" required >
+                        <br>
+                        <label class="" for="phone">Phone : </label>
+                        <input class="userid1" type="text" id="phone" name="phone" required >
+                        <br>
+                        <label class="" for="city">City : </label>
+                        <input class="userid1" type="text" id="city" name="city" required >
+                        <br>
+                        <label class="" for="psswd">Password : </label>
+                        <input class="userid1" type="password" id="psswd" name="password" required >
+                        <br>
+                        <button class="logbtn" type="submit">Sign up</button>
+                        <div class="response">
+                            {{response}}
+                            {{annu}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+        
+    </body>
+</html>
